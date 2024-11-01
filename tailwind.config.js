@@ -13,7 +13,7 @@ export default {
       'tab': { 'min': '431px', 'max': '900px' },
 
       // Maximum width of 1279px
-      'lap': { 'min': '901px' },
+      'lap': { 'min': '901px', 'max': '1440px' },
     },
     extend: {},
   },
