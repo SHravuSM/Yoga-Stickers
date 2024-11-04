@@ -1,1 +1,2 @@
-                                                  Yoga-Stickers
+                                         Yoga-Stickers
+                              https://yogastickers.netlify.app/
