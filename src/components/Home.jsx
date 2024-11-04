@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <div className="flex flex-col ">
         <Nav yes={0} About={About} about={about}></Nav>
-        {about ? <Body></Body> : <About />}
+        {about ? <Body /> : <About />}
         <Footer></Footer>
       </div>
 

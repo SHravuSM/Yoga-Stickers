@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import SearchDropdown from "./SearchDropdown";
 import CategoryDrowpdown from "./CategoryDrowpdown";
-import About from "./About";
+// import About from "./About";
+import Logo from "./images/Logo.svg";
+import Search from "./images/Search.svg";
+import Down from "./images/Down.svg";
+import about from "./images/About.svg";
+import Profile from "./images/Profile.svg";
+import Bag from "./images/Bag.svg";
+
 
 export default function Nav(props) {
   const [catStatus, setCatstatus] = useState(false);
@@ -12,7 +19,7 @@ export default function Nav(props) {
       <div className="h-full mob:gap-1 tab:gap-2 gap-4 flex items-center">
         <img
           className="mob:h-7 tab:h-10 h-14 rounded-lg"
-          src="./src/components/images/Logo.png"
+          src={Logo}
           alt=""
         />
         <p className="font-bold mob:text-[0px] tab:text-sm mob:font-thin text-white font-sans text-3xl ">
@@ -35,7 +42,7 @@ export default function Nav(props) {
             console.log(InputVal);
           }}
           className="h-8 mob:h-5 tab:h-6 rounded-lg"
-          src="./src/components/images/Search.png"
+          src={Search}
           alt=""
         />
         <div
@@ -47,7 +54,7 @@ export default function Nav(props) {
           </p>
           <img
             className="w-4 mob:w-2 tab:w-2"
-            src="./src/components/images/Down.png"
+            src={Down}
             alt=""
           />
         </div>
@@ -65,20 +72,20 @@ export default function Nav(props) {
         >
           <img
             className="h-10 cursor-pointer active:size-9 mob:h-5 tab:h-8 rounded-lg"
-            src="./src/components/images/About.png"
+            src={about}
             alt=""
           />
         </div>
         <img
           className="h-10 mob:h-5 tab:h-8 rounded-lg"
-          src="./src/components/images/Profile.png"
+          src={Profile}
           alt=""
         />
 
         <div className=" flex justify-between items-start ">
           <img
             className="h-10 mob:h-5 tab:h-8 rounded-lg"
-            src="./src/components/images/Bag.png"
+            src={Bag}
             alt=""
           />
           {props.yes ? (
